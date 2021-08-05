@@ -1,0 +1,165 @@
+html {
+    font-size: 100%;
+    height: 100%;
+}
+
+*, * ::before ::after {
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    font-family: 'Lexend Deca', sans-serif;
+}
+.allcard {
+    display: grid;
+    grid-template-areas: 
+    "card1"
+    "card2"
+    "card3";
+    color: $white;
+    height: 52.6875rem;
+    align-items: center;
+    justify-content: center;
+}
+
+.allcard h1 {
+    font-family: 'Big Shoulders Display', cursive;
+    text-transform: uppercase;
+    color: $white;
+    font-size: 39px;
+}
+
+.allcard img {
+    width: 3.9375rem;
+    height: 2.5625rem;
+}
+
+.allcard img, h1, p, button {
+    padding-left: 3rem;
+    padding-right: 2.375rem;
+}
+
+.allcard p {
+    line-height: 2rem;
+}
+
+.card1, .card2, .card3 {
+    width: 20.375rem;
+    height: 27.6875rem;
+    padding-top: 2.8125rem;
+    color: $whitetransparent;
+}
+
+.card1 {
+    grid-area: card1;
+    background-color: $brightorange;
+    border-radius: 0.5rem 0.5rem 0 0;
+}
+
+.card2 {
+    grid-area: card2;
+    background-color: $darkcyan;
+}
+
+.card3 {
+    grid-area: card3;
+    background-color: $verydarkcyan;
+    border-radius: 0 0 0.5rem 0.5rem;
+}
+
+.button1, .button2, .button3 {
+    width: 9.0625rem;
+    height: 2.9375rem;
+    font-family: 'Lexend Deca', sans-serif;
+    background-color: $white;
+    border: none;
+    border-radius: 1.875rem;
+    cursor: pointer;
+    padding: 0.9375rem 1.25rem;
+    text-align: center;
+    text-decoration: none;
+    margin-left: 3rem;
+    transition: 0.4s ease-in-out;
+}
+
+.button1 {
+    color: $brightorange;
+}
+
+.button1:hover {
+    background-color: $brightorange;
+    color: $white; 
+    border: 0.0625rem solid white;
+}
+
+.button2 {
+    color: $darkcyan;
+}
+
+.button2:hover {
+    background-color: $darkcyan;
+    color: $white;
+    border: 0.0625rem solid $white;
+}
+
+.button3 {
+    color: $verydarkcyan
+}
+
+.button3:hover {
+    background-color: $verydarkcyan;
+    color: $white;
+    border: 0.0625rem solid $white;
+}
+
+footer {
+    position: absolute;
+    bottom: -36.375rem;
+    text-align: center;
+    color: $whitetransparent
+}
+.attribution a {
+    text-decoration: none;
+    color: $white
+}
+
+@media screen and (min-width: 1440px) {
+    html {
+        display: table;
+        margin: auto;
+    }
+    body {
+        display: table-cell;
+        vertical-align: middle;
+    }
+    .allcard {
+        display: flex;
+        flex-direction: row;
+        width: 57.375rem;
+        height: 31.0625rem;
+        justify-content: center;
+    }
+
+    .card1 {
+        border-radius: 0.5rem 0 0 0.5rem;
+        }
+
+    .card3 {
+        border-radius: 0 0.5rem 0.5rem 0;
+    }
+
+    footer {
+        position: relative;
+        bottom: 0;
+        display: flex;
+        justify-content: center;
+        text-decoration: none;
+        color: black;
+    }
+
+    .attribution a {
+        text-decoration: none;
+        color: black;
+    }
+}
